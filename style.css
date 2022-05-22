@@ -1,38 +1,60 @@
 @import url('https://fonts.googleapis.com/css2?family=Harmattan&display=swap');
-/* Add a background color to the top navigation */
-.topnav, .botnav {
-  background-color: #1E4C41;
-  overflow: hidden;
+
+*{
+  font-family: 'Harmattan', sans-serif;
 }
 
-/* Style the links inside the navigation bar */
+
+.topnav, .botnav {
+  position: absolute;
+  background-color: #1E4C41;
+  overflow: hidden;
+  left: 0;
+  width: 100%;
+}
+
+.topnav{
+  top: 0;
+}
 .topnav a {
   float: left;
   padding: 14px 16px;
 }
 
 
+.botnav{
+  bottom: 0px;
+  height: 5vh;
+  min-height: 47;
+}
 .botnav img{
+
   float: left;
   display: block;
-  margin-top: auto;
-  margin-bottom: auto;
+ 
+}
+
+.vertical-center {
+  margin: 0;
+  position: absolute;
+  top: 50%;
+  -ms-transform: translateY(-50%);
+  transform: translateY(-50%);
 }
 
 .copyright {
-  padding-top: 11;
-  padding-left: 5;
+  left: 8;
 }
 
+
 .logo {
-  padding-top: 9;
-  padding-bottom: 9;
+  left: 31;
 }
+
 .botnav a{
-  font-family: 'Harmattan', sans-serif;
+  font-size: 20;
   color: #FFFFFF;
-  float: right;
-  padding: 5px 7px 5px;
+  right: 10;
 }
 
 .botnav a:link{
