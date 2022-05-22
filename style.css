@@ -4,6 +4,8 @@
   font-family: 'Harmattan', sans-serif;
 }
 
+/*index*/
+
 
 .topnav, .botnav {
   position: absolute;
@@ -20,6 +22,7 @@
   float: left;
   padding: 14px 16px;
 }
+
 
 .hike{
   position: absolute;
@@ -125,3 +128,43 @@ a:link{
 .botnav a:hover{
   text-decoration: underline;
 }
+
+/*teamPage*/
+
+
+h2{
+  font-size: 50;
+}
+
+.intro h2{
+  position: relative;
+  top: 45;
+  margin-bottom: 40;
+}
+
+.intro p{
+  margin: 0px 20px;
+  position: relative;
+  font-size: 28;
+}
+
+.mission h2{
+  position: relative;
+  top: 45;
+  margin-bottom: 40;
+}
+
+.mission p{
+  margin: 0px 20px;
+  position: relative;
+  font-size: 28;
+}
+
+.code-ium{
+  position: relative;
+  text-align: center;
+}
+
+
+
+
