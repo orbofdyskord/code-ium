@@ -28,10 +28,27 @@ function initMap(): void {
         locationServices(true, infoWindow, map.getCenter()!);
         }
         );
+        (async () => { 
+
+//Check to see if user is moving
+        await delay(10000);
+            
+navigator.geolocation.getCurrentPosition(
+            (position: GeolocationPosition) => {
+                const currentPosition = {
+                    lat: position.coords.latitude,
+                    lng: position.coords.longitude,
+                };
+        if(currentPosition == newPosition) {
+            process.exit(1);
+        }
+
+    })();
     }
     else {
         locationServices(false, infoWindow, map.getCenter()!);
     }
+    
     //Check to see if browser has location services enabled
     function locationServices(
         findLocation: boolean,
@@ -53,7 +70,12 @@ function initMap(): void {
       map: map,
     });
   }
-  
+
+  //Delay function
+function delay(ms: number) {
+    return new Promise( resolve => setTimeout(resolve, ms) );
+}
+    
   declare global {
     interface Window {
       initMap: () => void;
