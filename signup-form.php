@@ -16,16 +16,28 @@
 <html>
     <form action="signup-form-action.php" method="post">
         <div>
+            Username: 
+            <br>
             <input type="text" id="username" name="username" placeholder="Enter username here...">
+            <br>
         </div>
         <div>
+            First name:
+            <br>
             <input type="text" id="firstName" name="firstName" placeholder="Enter your first name">
+            <br>
         </div>
         <div>
+            Last name:
+            <br>
             <input type="text" id="lastName" name="lastName" placeholder="Enter your last name">
+            <br>
         </div>
         <div>
+            Email address:
+            <br>
             <input type="text" id="email" name="email" placeholder="Enter your email">
+            <br>
         </div>
         <?php 
             $sql1 = "
