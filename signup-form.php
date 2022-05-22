@@ -4,11 +4,11 @@
     include "session.php";
     include "auth.php";
 
-    if($_GET["userError"] == true) {
+    if($_GET["userError"]) {
         echo "Username is taken.";
         echo "<br>";
     }
-    if($_GET["emailError"] == true) {
+    if($_GET["emailError"]) {
         echo "Email is already in use.";
         echo "<br>";
     }
@@ -27,13 +27,26 @@
         <div>
             <input type="text" id="email" name="email" placeholder="Enter your email">
         </div>
+        <?php 
+            $sql1 = "
+                SELECT * FROM topics
+            ";
+            $rs1 = mysqli_query($dbc, $sql1);
+
+            while($row1 = mysqli_fetch_array($rs1)) {
+                $topicID = $row1["topicID"];
+                $topicName = $row1["topicName"];
+
+                echo "<input type=\"checkbox\" name=\"$topicName\" value=\"$topicID\">$topicName";
+                echo "<br>";
+            }
+        ?>
         <div>
             <input type="password" id="password" name="password" placeholder="Enter password here...">
         </div>
         <div>
             <input type="password" id="second-password" name="second-password" placeholder="Re-enter password here...">
-        </div>
-        <!-- While loop for all the topics, in a list of checkboxes -->
+        </div>        
         <button type="submit" name="signup-form" value="Sign up">
             Sign up
         </button>
