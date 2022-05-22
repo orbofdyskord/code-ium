@@ -3,6 +3,7 @@
     include "taskbar.php";
     include "session.php";
     include "auth.php";
+    echo "hello world!";
 ?>
 <html>
     
