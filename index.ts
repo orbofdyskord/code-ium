@@ -35,7 +35,7 @@ function initMap(): void {
             
 navigator.geolocation.getCurrentPosition(
             (position: GeolocationPosition) => {
-                const currentPosition = {
+                const newPosition = {
                     lat: position.coords.latitude,
                     lng: position.coords.longitude,
                 };
