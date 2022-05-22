@@ -10,12 +10,21 @@
     }
 ?>
 <html>
+    <head>
+        <link rel="stylesheet" href="style.css">
+    </head>
     <form action="login-form-action.php" method="post">
-        <div>
+        <div class="form">
+            Username:
+            <br>
             <input type="text" id="username" name="username" placeholder="Enter username here...">
+            <br>
         </div>
         <div>
+            Password:
+            <br>
             <input type="password" id="password" name="password" placeholder="Enter password here...">
+            <br>
         </div>
         <button type="submit" name="login-form" value="Log In">
             Log In

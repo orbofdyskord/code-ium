@@ -8,6 +8,13 @@
     <head>
         <link rel="stylesheet" href="style.css">
     </head>
+
+    <div class="topNav">
+      <a href= "index.php" ><img src="pics/codeium.png" ></a>
+    </div>
+
+    <div class = "teamPage">
+    <div class = "intro" >
     <h2 style="text-align:center">
         Who are we?
     </h2>
@@ -23,6 +30,10 @@
         <br>
 
     </p>
+
+    </div>
+
+    <div class="mission">
     <h2 style="text-align:center">
         Our Mission: Take a Walk!
     </h2>
@@ -34,7 +45,11 @@
         Our solution thus became walking; over the course of the pandemic, walking outside was one of the few safe ways to go outdoors and interact with others, face to face. We designed
         "Take a Walk!" to closely mimic the action of walking with others, particularly with the ability to see other people's faces and the routes they choose to walk. 
     </p>
+    </div>
+    <div class = "code-ium">
     <br><br>
-    <img src="code-ium.jpg" alt="Team Logo">
-    <br><br>
+	    <img height="50"  src="pics/code-ium.png" alt="Team Logo" >
+	    <br><br>
+    </div>
+    
 </html>
