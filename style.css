@@ -21,6 +21,67 @@
   padding: 14px 16px;
 }
 
+.hike{
+  position: absolute;
+  left: 0;
+  top: 65;
+  text-align:center;
+  display:block;
+  background-color: #1E4C41;
+  width: 100vw;
+}
+
+.connect{
+  position: relative;
+  top: 465;
+  font-size: 30;
+  text-align: center;
+
+}
+
+.login{
+  text-align: center;
+
+}
+.login a{
+  border: 1px solid black;
+  border-radius: 30px;
+  color: #F4F9FA;
+  position: relative;
+  top: 500;
+  font-size: 30;
+  text-align: center;
+  background-color: #1E4C41;
+  padding: 20 25vw;
+}
+
+.signUp{
+  text-align: center;
+
+}
+.signUp a{
+  border: 1px solid black;
+  border-radius: 30px;
+  color: #000000;
+  position: relative;
+  top: 570;
+  font-size: 30;
+  text-align: center;
+  background-color: #EAF1E6;
+  padding: 20 25vw;
+}
+
+.teamInfo{
+  text-align: center;
+}
+.teamInfo a{
+  text-align: center;
+  color: #000000;
+  position: relative;
+  top: 610;
+  font-size: 35;
+  
+}
 
 .botnav{
   bottom: 0px;
@@ -57,7 +118,7 @@
   right: 10;
 }
 
-.botnav a:link{
+a:link{
   text-decoration: none;
 }
 
