@@ -10,6 +10,24 @@
     $email = $_POST["email"];
     $password = $_POST["password"];
 
+    $sql0 = "
+        SELECT * FROM topics
+    ";
+    $rs0 = mysqli_query($dbc, $sql1);
+
+    $topicNames = array();
+    $topicIDs = array();
+
+    while($row0 = mysqli_fetch_array($rs0)) {
+        $topicID = $row0["topicID"];
+        $topicName = $row00["topicName"];       //Maybe unnecessary
+
+        if(defined($_POST["$topicName"])) {
+            array_push($topicNames, $topicName);    //Maybe unnecessary
+            array_push($topicIDs, $topicID);
+        }
+    }
+
     $sql1 = "
         SELECT * FROM users
         WHERE username = '$username';
@@ -30,9 +48,29 @@
         header("Location: signup-form.php?emailError=true");
     }
 
+    $sql3 = "
+        INSERT INTO users (username, password, firstName, lastName, email) values (\"$username\", \"$password\", \"$firstName\", \"$lastName\", \"$email\");
+    ";
+    mysqli_query($dbc, $sql3);
+    $sql4 = "
+        SELECT * FROM users
+        WHERE username = \"$username\" AND password = \"$password\";
+    ";
+    $rs4 = mysqli_query($dbc, $sql4);
+    $row4 = mysqli_fetch_array($rs4);
+    $userID = $row4["userID"];
+
     $_SESSION["firstName"] = $firstName;
     $_SESSION["lastName"] = $lastName;
     $_SESSION["email"] = $email;
     $_SESSION["userID"] = $userID;
+
+
+    foreach($topicIDs as $ID) {
+        $sql5 = "
+            INSERT INTO usersToTopics(userID, topicID) values ($userID, $ID);
+        ";
+    }
+
     header("Location: connection.php")
 ?>
