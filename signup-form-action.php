@@ -20,7 +20,7 @@
 
     while($row0 = mysqli_fetch_array($rs0)) {
         $topicID = $row0["topicID"];
-        $topicName = $row00["topicName"];       //Maybe unnecessary
+        $topicName = $row0["topicName"];       //Maybe unnecessary
 
         if(defined($_POST["$topicName"])) {
             array_push($topicNames, $topicName);    //Maybe unnecessary

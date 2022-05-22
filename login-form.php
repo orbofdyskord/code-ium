@@ -20,12 +20,12 @@
             <input type="text" id="username" name="username" placeholder="Enter username here...">
             <br>
         </div>
-        <div>
+        <div class="form">
             Password:
             <br>
             <input type="password" id="password" name="password" placeholder="Enter password here...">
             <br>
-        </div>
+        <div class="form">
         <button type="submit" name="login-form" value="Log In">
             Log In
         </button>

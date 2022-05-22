@@ -9,10 +9,6 @@
         <link rel="stylesheet" href="style.css">
     </head>
 
-    <div class="topNav">
-      <a href= "index.php" ><img src="pics/codeium.png" ></a>
-    </div>
-
     <div class = "teamPage">
     <div class = "intro" >
     <h2 style="text-align:center">
@@ -46,10 +42,4 @@
         "Take a Walk!" to closely mimic the action of walking with others, particularly with the ability to see other people's faces and the routes they choose to walk. 
     </p>
     </div>
-    <div class = "code-ium">
-    <br><br>
-	    <img height="50"  src="pics/code-ium.png" alt="Team Logo" >
-	    <br><br>
-    </div>
-    
 </html>
