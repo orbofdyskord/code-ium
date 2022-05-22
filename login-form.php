@@ -12,5 +12,8 @@
         <div>
             <textarea rows="2" cols="60" name="password" placeholder="Enter password here..."></textarea>
         </div>
+        <button type="submit" name="login-form" value="Log In">
+            Log In
+        </button>
     </form>
 </html>
