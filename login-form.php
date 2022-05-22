@@ -3,14 +3,19 @@
     include "taskbar.php";
     include "session.php";
     include "auth.php";
+
+    if($_GET["error"] == TRUE) {
+        echo "Invalid username or password; please try again.";
+        echo "<br>";
+    }
 ?>
 <html>
     <form action="login-form-action.php" method="post">
         <div>
-            <textarea rows="2" cols="60" name="username" placeholder="Enter username here..."></textarea>
+            <input type="text" id="username" name="username" placeholder="Enter username here...">
         </div>
         <div>
-            <textarea rows="2" cols="60" name="password" placeholder="Enter password here..."></textarea>
+            <input type="password" id="password" name="password" placeholder="Enter password here...">
         </div>
         <button type="submit" name="login-form" value="Log In">
             Log In
